@@ -1,0 +1,10 @@
+{
+    "item" : [
+        {
+            "name" : "gogi",
+            "price" : 30,
+            "carbon" : 30,
+            "img_dir" : "img/featured/feature-1.jpg"
+        }
+    ]
+}

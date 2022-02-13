@@ -1425,7 +1425,12 @@ ol {
 	border-top: 1px solid #ebebeb;
 	padding-bottom: 20px;
 }
-
+.filter_carbon{
+	background-color: #7fad39;
+	font-size: 20px;
+	margin-top: 20px;
+	border-radius: 8px;
+}
 .filter__sort {
 	margin-bottom: 15px;
 }
