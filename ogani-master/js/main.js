@@ -22,24 +22,112 @@
             return response.json();})
         .then(function(json){
             let products = json;
-            console.log(products);
+            //console.log(products);
+            loaditem(products)
+        })
+        .then(function(){
+            $('.set-bg').each(function () {
+            var bg = $(this).data('setbg');
+            $(this).css('background-image', 'url(' + bg + ')');
+            var containerEl = document.querySelector('.featured__filter');
+            var mixer = mixitup(containerEl);
+            console.log(mixer)
+            // mixer.filter('.apple')
+    });
         })
         .catch(function(err){
             console.log('Fetch problem:' + err.message);});
+
+
+    /*making products list*/
+    
+    function loaditem(products){
+        for(let i = 0; i < products.length ; i++){
+            let feature = document.createElement('div')
+            let image = document.createElement('div')
+            feature.setAttribute("class", "featured__item__text")
+//image----------------------------------------------------------
+            image.setAttribute("class", "featured__item__pic set-bg")
+            image.setAttribute("data-setbg", products[i].img_dir)
+            image.style.backgroundImage = products[i].img_dir
+            let inner = document.createElement('ul')
+            inner.setAttribute("class", "featured__item__pic__hover")
+
+            inner.innerHTML += ('<ul class="featured__item__pic__hover"> ')
+            inner.innerHTML += ('  <li><a href="#"><i class="fa fa-heart"></i></a></li>')
+            inner.innerHTML += ('  <li><a href="#"><i class="fa fa-retweet"></i></a></li>')
+            inner.innerHTML += ('  <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li></ul>')
+            image.append(inner)
+// feature------------------------------------------------------------
+            let name = document.createElement('h6')
+            name.append("'" + products[i].name + "'")
+            //console.log(name)
+            let price = document.createElement('h5')
+            price.setAttribute('class', 'price')
+            price.innerHTML = products[i].price + " $"
+
+            let carbon = document.createElement('h5')
+            carbon.setAttribute('class', 'carbon')
+            carbon.style.display = "none"
+            carbon.innerHTML = products[i].carbon +  'kg CO2eq'
+            feature.append(name, price, carbon)
+            //console.log(feature)
+
+            let post = document.createElement('div')
+            post.setAttribute("class", "col-lg-3 col-md-4 col-sm-6 mix " + products[i].category)
+            let container = document.createElement('div')
+            container.setAttribute("class", "featured__item")
+            container.append(image, feature)
+            post.append(container)
+            console.log(post)
+
+            document.getElementById("product_box").append(post)
+
+        }
+    }    
+
+
         $(".loader").fadeOut();
         $("#preloder").delay(200).fadeOut("slow");
 
         /*------------------
             Gallery filter
         --------------------*/
+        $('.filter_carbon').on('click', function () {
+            var x = document.getElementsByClassName('carbon');
+            var y = document.getElementsByClassName('price');
+                      
+            if(document.getElementsByClassName('filter_carbon')[0].classList.contains('active')){
+                $('.filter_carbon').removeClass('active');
+                for(var i = 0; i < x.length; i++){
+                    x[i].style.display = "";
+                    y[i].style.display = "none";
+                       
+                }
+            }
+            else {
+                $(this).addClass('active');
+
+                for(var i = 0; i < x.length; i++){
+                    x[i].style.display = "none";
+                    y[i].style.display = "";
+                    
+                }}
+        })
+
+
+    // filter control        
         $('.featured__controls li').on('click', function () {
             $('.featured__controls li').removeClass('active');
             $(this).addClass('active');
+            // mixer.filter('.apple')
         });
-        if ($('.featured__filter').length > 0) {
-            var containerEl = document.querySelector('.featured__filter');
-            var mixer = mixitup(containerEl);
-        }
+
+        // if ($('.featured__filter').length > 0) {
+        //     var containerEl = document.querySelector('.featured__filter');
+        //     var mixer = mixitup(containerEl);
+        //     mixer.filter('.google')
+        // }
     });
 
     /*------------------

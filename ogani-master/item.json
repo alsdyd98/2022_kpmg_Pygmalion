@@ -1,12 +1,37 @@
 [
     {
-    "item" : [
-        {
-            "name" : "Pixel5a-128GB",
-            "price" : 499.00,
-            "carbon" : 60,
-            "img_dir" : "img/pixel/pixel5a-128gb.jpg"
-        }
-    ]
+        "category" : "google",
+        "name" : "Pixel5a-128GB",
+        "price" : 499.00,
+        "carbon" : 60,
+        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
+    },
+    {
+        "category" : "huawei",
+        "name" : "Pixel5a-128GB",
+        "price" : 499.00,
+        "carbon" : 60,
+        "img_dir" : "img/pixel/pixel6-128gb.jpg"
+    },
+    {
+        "category" : "google",
+        "name" : "Pixel5a-128GB",
+        "price" : 499.00,
+        "carbon" : 60,
+        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
+    },
+    {
+        "category" : "google",
+        "name" : "Pixel5a-128GB",
+        "price" : 499.00,
+        "carbon" : 60,
+        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
+    },
+    {
+        "category" : "apple",
+        "name" : "Pixel5a-128GB",
+        "price" : 499.00,
+        "carbon" : 60,
+        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
     }
 ]
