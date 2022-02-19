@@ -17,7 +17,7 @@
     $(window).on('load', function () {
         /* fetch Item json*/
 
-        fetch('./ogani-mster/item.json')
+        fetch('./item.json')
         .then(function(response){
             return response.json();})
         .then(function(json){
