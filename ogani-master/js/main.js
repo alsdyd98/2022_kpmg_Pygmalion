@@ -17,7 +17,7 @@
     $(window).on('load', function () {
         /* fetch Item json*/
 
-        fetch('./item.json')
+        fetch('https://github.com/alsdyd98/2022_kpmg_Pygmalion/blob/main/ogani-master/item.json')
         .then(function(response){
             return reponse.json();})
         .then(function(json){
