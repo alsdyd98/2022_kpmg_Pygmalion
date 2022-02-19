@@ -15,6 +15,17 @@
         Preloader
     --------------------*/
     $(window).on('load', function () {
+        /* fetch Item json*/
+
+        fetch('./item.json')
+        .then(function(response){
+            return reponse.json();})
+        .then(function(json){
+            let products = json;
+            console.log(products);
+        })
+        .catch(function(err){
+            console.log('Fetch problem:' + err.message);});
         $(".loader").fadeOut();
         $("#preloder").delay(200).fadeOut("slow");
 
