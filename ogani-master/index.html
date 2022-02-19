@@ -313,7 +313,17 @@
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-
+    <script>
+        fetch('./item.json')
+        .then(function(response){
+            return reponse.json();})
+        .then(function(json){
+            let products = json;
+            console.log(products);
+        })
+        .catch(function(err){
+            console.log('Fetch problem:' + err.message);});
+    </script>
 
 
 </body>
