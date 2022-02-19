@@ -19,7 +19,7 @@
 
         fetch('../item.json')
         .then(function(response){
-            return reponse.json();})
+            return response.json();})
         .then(function(json){
             let products = json;
             console.log(products);
