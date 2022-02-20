@@ -65,13 +65,13 @@ var mixer
             let price = document.createElement('h5')
             price.setAttribute('class', 'price')
             //price.setAttribute('price', price)
-            price.innerHTML = products[i].price + " $"
+            price.innerHTML = products[i].price.toFixed(2) + " $"
 
             let carbon = document.createElement('h5')
             carbon.setAttribute('class', 'carbon')
             //carbon.setAttribute('data-carbon', products[i].carbon)
             carbon.style.display = "none"
-            carbon.innerHTML = products[i].carbon +  'kg CO2eq'
+            carbon.innerHTML = products[i].carbon.toFixed(2) +  'kg CO2eq'
             feature.append(name, price, carbon)
             //console.log(feature)
 
@@ -80,8 +80,8 @@ var mixer
             let container = document.createElement('div')
             container.setAttribute("class", "featured__item")
             //for sorting
-            post.setAttribute('data-carbon', products[i].carbon)
-            post.setAttribute('data-price', products[i].price)
+            post.setAttribute('data-carbon', products[i].carbon.toFixed(2))
+            post.setAttribute('data-price', products[i].price.toFixed(2))
 
             container.append(image, feature)
             post.append(container)
