@@ -3,15 +3,8 @@
         "category" : "google",
         "name" : "Pixel5a-128GB",
         "price" : 499.00,
-        "carbon" : 60,
+        "carbon" : 50,
         "img_dir" : "img/pixel/pixel5a-128gb.jpg"
-    },
-    {
-        "category" : "huawei",
-        "name" : "Pixel5a-128GB",
-        "price" : 499.00,
-        "carbon" : 60,
-        "img_dir" : "img/pixel/pixel6-128gb.jpg"
     },
     {
         "category" : "google",
@@ -22,6 +15,140 @@
     },
     {
         "category" : "google",
+        "name" : "Pixel5a-128GB",
+        "price" : 499.00,
+        "carbon" : 60,
+        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
+    },
+    {
+        "category" : "google",
+        "name" : "Pixel5a-128GB",
+        "price" : 499.00,
+        "carbon" : 40,
+        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
+    },
+    {
+        "category" : "apple",
+        "name" : "Pixel5a-128GB",
+        "price" : 499.00,
+        "carbon" : 30,
+        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
+    },
+
+    {
+        "category" : "apple",
+        "name" : "Pixel5a-128GB",
+        "price" : 499.00,
+        "carbon" : 60,
+        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
+    },
+    {
+        "category" : "apple",
+        "name" : "Pixel5a-128GB",
+        "price" : 499.00,
+        "carbon" : 60,
+        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
+    },
+    {
+        "category" : "apple",
+        "name" : "Pixel5a-128GB",
+        "price" : 499.00,
+        "carbon" : 60,
+        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
+    },
+    {
+        "category" : "apple",
+        "name" : "Pixel5a-128GB",
+        "price" : 339.00,
+        "carbon" : 40,
+        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
+    },
+    {
+        "category" : "apple",
+        "name" : "Pixel5a-128GB",
+        "price" : 499.00,
+        "carbon" : 60,
+        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
+    },
+    {
+        "category" : "apple",
+        "name" : "Pixel5a-128GB",
+        "price" : 499.00,
+        "carbon" : 60,
+        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
+    },
+    {
+        "category" : "apple",
+        "name" : "Pixel5a-128GB",
+        "price" : 499.00,
+        "carbon" : 60,
+        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
+    },
+    {
+        "category" : "apple",
+        "name" : "Pixel5a-128GB",
+        "price" : 499.00,
+        "carbon" : 60,
+        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
+    },
+    {
+        "category" : "apple",
+        "name" : "Pixel5a-128GB",
+        "price" : 499.00,
+        "carbon" : 60,
+        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
+    },
+    {
+        "category" : "apple",
+        "name" : "Pixel5a-128GB",
+        "price" : 499.00,
+        "carbon" : 60,
+        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
+    },
+    {
+        "category" : "apple",
+        "name" : "Pixel5a-128GB",
+        "price" : 499.00,
+        "carbon" : 60,
+        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
+    },
+    {
+        "category" : "apple",
+        "name" : "Pixel5a-128GB",
+        "price" : 499.00,
+        "carbon" : 60,
+        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
+    },
+    {
+        "category" : "apple",
+        "name" : "Pixel5a-128GB",
+        "price" : 499.00,
+        "carbon" : 60,
+        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
+    },
+    {
+        "category" : "apple",
+        "name" : "Pixel5a-128GB",
+        "price" : 499.00,
+        "carbon" : 60,
+        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
+    },
+    {
+        "category" : "apple",
+        "name" : "Pixel5a-128GB",
+        "price" : 499.00,
+        "carbon" : 60,
+        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
+    },
+    {
+        "category" : "apple",
+        "name" : "Pixel5a-128GB",
+        "price" : 499.00,
+        "carbon" : 60,
+        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
+    },
+    {
+        "category" : "apple",
         "name" : "Pixel5a-128GB",
         "price" : 499.00,
         "carbon" : 60,
@@ -34,4 +161,5 @@
         "carbon" : 60,
         "img_dir" : "img/pixel/pixel5a-128gb.jpg"
     }
+
 ]

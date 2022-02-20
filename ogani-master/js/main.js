@@ -8,7 +8,7 @@
 ---------------------------------------------------------  */
 
 'use strict';
-
+var mixer
 (function ($) {
 
     /*------------------
@@ -30,7 +30,7 @@
             var bg = $(this).data('setbg');
             $(this).css('background-image', 'url(' + bg + ')');
             var containerEl = document.querySelector('.featured__filter');
-            var mixer = mixitup(containerEl);
+            mixer = mixitup(containerEl);
             console.log(mixer)
             // mixer.filter('.apple')
     });
@@ -64,10 +64,12 @@
             //console.log(name)
             let price = document.createElement('h5')
             price.setAttribute('class', 'price')
+            //price.setAttribute('price', price)
             price.innerHTML = products[i].price + " $"
 
             let carbon = document.createElement('h5')
             carbon.setAttribute('class', 'carbon')
+            //carbon.setAttribute('data-carbon', products[i].carbon)
             carbon.style.display = "none"
             carbon.innerHTML = products[i].carbon +  'kg CO2eq'
             feature.append(name, price, carbon)
@@ -77,6 +79,10 @@
             post.setAttribute("class", "col-lg-3 col-md-4 col-sm-6 mix " + products[i].category)
             let container = document.createElement('div')
             container.setAttribute("class", "featured__item")
+            //for sorting
+            post.setAttribute('data-carbon', products[i].carbon)
+            post.setAttribute('data-price', products[i].price)
+
             container.append(image, feature)
             post.append(container)
             console.log(post)
@@ -93,12 +99,33 @@
         /*------------------
             Gallery filter
         --------------------*/
+//carbon_sort on click
+        $('.carbon_sort').on('click', function () {
+            // var mixer2 = mixitup(document.querySelector('.featured__filter'));
+            if(document.getElementsByClassName('filter_carbon')[0].classList.contains('active'))
+            {mixer.sort('price:asc')
+            .then(function(state) {
+                console.log(state.activeSort.attribute === 'carbon'); // true
+                console.log(state.activeSort.order === 'asc'); // true
+            });}
+
+            else{
+                mixer.sort('carbon:asc')
+                .then(function(state) {
+                console.log(state.activeSort.attribute === 'price'); // true
+                console.log(state.activeSort.order === 'asc'); // true
+                })
+            }
+        })
+
+//carbon_filter on click
         $('.filter_carbon').on('click', function () {
             var x = document.getElementsByClassName('carbon');
             var y = document.getElementsByClassName('price');
                       
             if(document.getElementsByClassName('filter_carbon')[0].classList.contains('active')){
                 $('.filter_carbon').removeClass('active');
+                document.getElementsByClassName('featured spad')[0].style.background = '#F1FFF0'
                 for(var i = 0; i < x.length; i++){
                     x[i].style.display = "";
                     y[i].style.display = "none";
@@ -107,7 +134,7 @@
             }
             else {
                 $(this).addClass('active');
-
+                document.getElementsByClassName('featured spad')[0].style.background = ''
                 for(var i = 0; i < x.length; i++){
                     x[i].style.display = "none";
                     y[i].style.display = "";
