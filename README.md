@@ -3,9 +3,14 @@
 [2022 KPMG Ideathon Challenge] Pygmalion
 
 ## Overview
-We suggest you 
 
 ![image](https://user-images.githubusercontent.com/80660346/154846724-b391d8fb-a289-4117-8c48-8be83b2b007f.png)
+
+First of all, features of product are extracted from the company website and they are converted to JSON form. In this repository, it only cares about smartphones which we selected as our sample type.
+
+Converted JSON file is passed to our API Gateway which will return carbon emission prediction. It goes to our server which contains our AI module. AI module consists of certain models which we pre-trained through some known smartphone data. It responses the carbon emission prediction and API returns such value.
+
+To explain in detail about our model, we have trained carbon emission of production, transport, use procedure respectively through some known data of Apple, Huawei, Google smartphones.
 
 ## URL for API (During Competition)
 
@@ -51,9 +56,8 @@ The query should include information of product, display, battery, mass, storage
 2. Satisfy every requirements.
 3. Go to local repository folder, run:
   ```shell
-  $ cd myapp
-  $ nohup npm start &
-  ...
+  $ cd API
+  $ nohup gunicorn --bind 0.0.0.0:5000 phone-api:app &
   ```
  
 ## P-market Explore
@@ -72,7 +76,7 @@ With our service, Customers can go into high-involvement shopping without consid
 https://alsdyd98.github.io/2022_kpmg_Pygmalion/P-market/index.html
 
 ## File Description
-- `phone-api.py`: 
+- `phone-api.py`: Python scripts that works for API communication & model implication
 - `scaler.pkl`: Model of scaling given data
 - `production1.pkl`: Prediction model of carbon emmision on production process
 - `transport2.pkl`: Prediction model of carbon emmision on transport process
