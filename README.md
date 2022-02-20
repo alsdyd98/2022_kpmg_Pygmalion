@@ -10,7 +10,7 @@ First of all, features of product are extracted from the company website and the
 
 Converted JSON file is passed to our API Gateway which will return carbon emission prediction. It goes to our server which contains our AI module. AI module consists of certain models which we pre-trained through some known smartphone data. It responses the carbon emission prediction and API returns such value.
 
-To explain in detail about our model, we have trained carbon emission of production, transport, use procedure respectively through some known data of Apple, Huawei, Google smartphones.
+To explain more about our AI module, it is mainly controlled by `phone-api.py` which handles API communication with models. `phone-api.py` first scales the given data with pre-trained scaler and then calls three AI-models: `production1.pkl`, `transport2.pkl`, `use3.pkl`. These are the models we have trained carbon emission of production, transport, use procedure respectively through some known data of Apple, Huawei, Google smartphones. The final prediction to return is the sum of three results from those models.
 
 ## URL for API (During Competition)
 
