@@ -1,165 +1,415 @@
 [
-    {
-        "category" : "google",
-        "name" : "Pixel5a-128GB",
-        "price" : 499.00,
-        "carbon" : 50,
-        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
-    },
-    {
-        "category" : "google",
-        "name" : "Pixel5a-128GB",
-        "price" : 499.00,
-        "carbon" : 60,
-        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
-    },
-    {
-        "category" : "google",
-        "name" : "Pixel5a-128GB",
-        "price" : 499.00,
-        "carbon" : 60,
-        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
-    },
-    {
-        "category" : "google",
-        "name" : "Pixel5a-128GB",
-        "price" : 499.00,
-        "carbon" : 40,
-        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
-    },
-    {
-        "category" : "apple",
-        "name" : "Pixel5a-128GB",
-        "price" : 499.00,
-        "carbon" : 30,
-        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
-    },
-
-    {
-        "category" : "apple",
-        "name" : "Pixel5a-128GB",
-        "price" : 499.00,
-        "carbon" : 60,
-        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
-    },
-    {
-        "category" : "apple",
-        "name" : "Pixel5a-128GB",
-        "price" : 499.00,
-        "carbon" : 60,
-        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
-    },
-    {
-        "category" : "apple",
-        "name" : "Pixel5a-128GB",
-        "price" : 499.00,
-        "carbon" : 60,
-        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
-    },
-    {
-        "category" : "apple",
-        "name" : "Pixel5a-128GB",
-        "price" : 339.00,
-        "carbon" : 40,
-        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
-    },
-    {
-        "category" : "apple",
-        "name" : "Pixel5a-128GB",
-        "price" : 499.00,
-        "carbon" : 60,
-        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
-    },
-    {
-        "category" : "apple",
-        "name" : "Pixel5a-128GB",
-        "price" : 499.00,
-        "carbon" : 60,
-        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
-    },
-    {
-        "category" : "apple",
-        "name" : "Pixel5a-128GB",
-        "price" : 499.00,
-        "carbon" : 60,
-        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
-    },
-    {
-        "category" : "apple",
-        "name" : "Pixel5a-128GB",
-        "price" : 499.00,
-        "carbon" : 60,
-        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
-    },
-    {
-        "category" : "apple",
-        "name" : "Pixel5a-128GB",
-        "price" : 499.00,
-        "carbon" : 60,
-        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
-    },
-    {
-        "category" : "apple",
-        "name" : "Pixel5a-128GB",
-        "price" : 499.00,
-        "carbon" : 60,
-        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
-    },
-    {
-        "category" : "apple",
-        "name" : "Pixel5a-128GB",
-        "price" : 499.00,
-        "carbon" : 60,
-        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
-    },
-    {
-        "category" : "apple",
-        "name" : "Pixel5a-128GB",
-        "price" : 499.00,
-        "carbon" : 60,
-        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
-    },
-    {
-        "category" : "apple",
-        "name" : "Pixel5a-128GB",
-        "price" : 499.00,
-        "carbon" : 60,
-        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
-    },
-    {
-        "category" : "apple",
-        "name" : "Pixel5a-128GB",
-        "price" : 499.00,
-        "carbon" : 60,
-        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
-    },
-    {
-        "category" : "apple",
-        "name" : "Pixel5a-128GB",
-        "price" : 499.00,
-        "carbon" : 60,
-        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
-    },
-    {
-        "category" : "apple",
-        "name" : "Pixel5a-128GB",
-        "price" : 499.00,
-        "carbon" : 60,
-        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
-    },
-    {
-        "category" : "apple",
-        "name" : "Pixel5a-128GB",
-        "price" : 499.00,
-        "carbon" : 60,
-        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
-    },
-    {
-        "category" : "apple",
-        "name" : "Pixel5a-128GB",
-        "price" : 499.00,
-        "carbon" : 60,
-        "img_dir" : "img/pixel/pixel5a-128gb.jpg"
-    }
-
+  {
+    "category": "apple",
+    "name": "iPhone13-128GB",
+    "price": 799,
+    "carbon": 64,
+    "img_dir": "img/iphone/iphone13-128gb.jpg"
+  },
+  {
+    "category": "google",
+    "name": "Pixel6-Pro-128GB",
+    "price": 899,
+    "carbon": 0,
+    "img_dir": "img/pixel/pixel6-pro-128gb.jpg"
+  },
+  {
+    "category": "samsung",
+    "name": "GalaxyS22-Ultra-256GB",
+    "price": 1199.99,
+    "carbon": 0,
+    "img_dir": "img/galaxy/galaxys22-ultra-256gb.jpg"
+  },
+  {
+    "category": "apple",
+    "name": "iPhone13-256GB",
+    "price": 899,
+    "carbon": 71,
+    "img_dir": "img/iphone/iphone13-256gb.jpg"
+  },
+  {
+    "category": "huawei",
+    "name": "P9",
+    "price": 274,
+    "carbon": 54.7,
+    "img_dir": "img/huawei/mate10-pro-64gb.jpg"
+  },
+  {
+    "category": "samsung",
+    "name": "GalaxyS21-Plus-128GB",
+    "price": 999.99,
+    "carbon": 0,
+    "img_dir": "img/galaxy/galaxys21-plus-128gb.jpg"
+  },
+  {
+    "category": "huawei",
+    "name": "Mate10-Pro-64GB",
+    "price": 615,
+    "carbon": 70.06,
+    "img_dir": "img/huawei/mate10-pro-64gb.jpg"
+  },
+  {
+    "category": "huawei",
+    "name": "Mate10",
+    "price": 250,
+    "carbon": 70.33,
+    "img_dir": "img/huawei/mate10.jpg"
+  },
+  {
+    "category": "apple",
+    "name": "iPhone13-512GB",
+    "price": 1099,
+    "carbon": 83,
+    "img_dir": "img/iphone/iphone13-512gb.jpg"
+  },
+  {
+    "category": "huawei",
+    "name": "Mate10-Pro-128GB",
+    "price": 649.99,
+    "carbon": 70.06,
+    "img_dir": "img/huawei/mate10-pro-64gb.jpg"
+  },
+  {
+    "category": "samsung",
+    "name": "GalaxyS22-Ultra-1TB",
+    "price": 1599.99,
+    "carbon": 0,
+    "img_dir": "img/galaxy/galaxys22-ultra-1tb.jpg"
+  },
+  {
+    "category": "google",
+    "name": "Pixel5a-128GB",
+    "price": 499,
+    "carbon": 60,
+    "img_dir": "img/pixel/pixel5a-128gb.jpg"
+  },
+  {
+    "category": "huawei",
+    "name": "P20-lite",
+    "price": 539,
+    "carbon": 59.3,
+    "img_dir": "img/huawei/psmart-plus.jpg"
+  },
+  {
+    "category": "apple",
+    "name": "iPhone13-Pro-128GB",
+    "price": 999,
+    "carbon": 69,
+    "img_dir": "img/iphone/iphone13-pro-128gb.jpg"
+  },
+  {
+    "category": "samsung",
+    "name": "GalaxyZ-fold3-512GB",
+    "price": 1899.99,
+    "carbon": 0,
+    "img_dir": "img/galaxy/galaxyz-fold3-512gb.jpg"
+  },
+  {
+    "category": "huawei",
+    "name": "Psmart-Plus",
+    "price": 230,
+    "carbon": 63.5,
+    "img_dir": "img/huawei/psmart-plus.jpg"
+  },
+  {
+    "category": "apple",
+    "name": "iPhone13-Pro-256GB",
+    "price": 1099,
+    "carbon": 76,
+    "img_dir": "img/iphone/iphone13-pro-256gb.jpg"
+  },
+  {
+    "category": "huawei",
+    "name": "P9-plus",
+    "price": 657,
+    "carbon": 61.1,
+    "img_dir": "img/huawei/mate10-pro-64gb.jpg"
+  },
+  {
+    "category": "apple",
+    "name": "iPhone13-Pro-512GB",
+    "price": 1299,
+    "carbon": 88,
+    "img_dir": "img/iphone/iphone13-pro-512gb.jpg"
+  },
+  {
+    "category": "samsung",
+    "name": "GalaxyS21-128GB",
+    "price": 799.99,
+    "carbon": 0,
+    "img_dir": "img/galaxy/galaxys21-128gb.jpg"
+  },
+  {
+    "category": "huawei",
+    "name": "Honor10",
+    "price": 668,
+    "carbon": 62.9,
+    "img_dir": "img/huawei/mate10-pro-64gb.jpg"
+  },
+  {
+    "category": "apple",
+    "name": "iPhone13-Pro-1TB",
+    "price": 1499,
+    "carbon": 112,
+    "img_dir": "img/iphone/iphone13-pro-1tb.jpg"
+  },
+  {
+    "category": "huawei",
+    "name": "Mate20-Pro",
+    "price": 480.65,
+    "carbon": 68.8,
+    "img_dir": "img/huawei/mate20-pro.jpg"
+  },
+  {
+    "category": "apple",
+    "name": "iPhone13-mini-128GB",
+    "price": 699,
+    "carbon": 61,
+    "img_dir": "img/iphone/iphone13-mini-128gb.jpg"
+  },
+  {
+    "category": "apple",
+    "name": "iPhone13-mini-256GB",
+    "price": 799,
+    "carbon": 69,
+    "img_dir": "img/iphone/iphone13-mini-256gb.jpg"
+  },
+  {
+    "category": "samsung",
+    "name": "GalaxyS22-Ultra-512GB",
+    "price": 1299.99,
+    "carbon": 0,
+    "img_dir": "img/galaxy/galaxys22-ultra-512gb.jpg"
+  },
+  {
+    "category": "apple",
+    "name": "iPhone13-mini-512GB",
+    "price": 999,
+    "carbon": 81,
+    "img_dir": "img/iphone/iphone13-mini-512gb.jpg"
+  },
+  {
+    "category": "huawei",
+    "name": "P40",
+    "price": 676.6,
+    "carbon": 73.7,
+    "img_dir": "img/huawei/p40.jpg"
+  },
+  {
+    "category": "apple",
+    "name": "iPhone13-ProMax-128GB",
+    "price": 1099,
+    "carbon": 74,
+    "img_dir": "img/iphone/iphone13-promax-128gb.jpg"
+  },
+  {
+    "category": "samsung",
+    "name": "GalaxyZ-flip3-256GB",
+    "price": 1049.99,
+    "carbon": 0,
+    "img_dir": "img/galaxy/galaxyz-flip3-256gb.jpg"
+  },
+  {
+    "category": "huawei",
+    "name": "P9-lite",
+    "price": 264,
+    "carbon": 53.4,
+    "img_dir": "img/huawei/mate10-pro-64gb.jpg"
+  },
+  {
+    "category": "apple",
+    "name": "iPhone13-ProMax-256GB",
+    "price": 1199,
+    "carbon": 81,
+    "img_dir": "img/iphone/iphone13-promax-256gb.jpg"
+  },
+  {
+    "category": "samsung",
+    "name": "GalaxyS22-Plus-256GB",
+    "price": 999.99,
+    "carbon": 0,
+    "img_dir": "img/galaxy/galaxys22-plus-256gb.jpg"
+  },
+  {
+    "category": "huawei",
+    "name": "Mate20-X-128GB",
+    "price": 411,
+    "carbon": 82.8,
+    "img_dir": "img/huawei/mate20-x-128gb.jpg"
+  },
+  {
+    "category": "apple",
+    "name": "iPhone13-ProMax-512GB",
+    "price": 1399,
+    "carbon": 93,
+    "img_dir": "img/iphone/iphone13-promax-512gb.jpg"
+  },
+  {
+    "category": "apple",
+    "name": "iPhone13-ProMax-1TB",
+    "price": 1599,
+    "carbon": 117,
+    "img_dir": "img/iphone/iphone13-promax-1tb.jpg"
+  },
+  {
+    "category": "huawei",
+    "name": "P30",
+    "price": 522.4,
+    "carbon": 71.7,
+    "img_dir": "img/huawei/p30.jpg"
+  },
+  {
+    "category": "apple",
+    "name": "iPhone12-64GB",
+    "price": 749,
+    "carbon": 70,
+    "img_dir": "img/iphone/iphone12-64gb.jpg"
+  },
+  {
+    "category": "apple",
+    "name": "iPhone12-128GB",
+    "price": 799,
+    "carbon": 75,
+    "img_dir": "img/iphone/iphone12-128gb.jpg"
+  },
+  {
+    "category": "samsung",
+    "name": "GalaxyZ-fold3-256GB",
+    "price": 1799.99,
+    "carbon": 0,
+    "img_dir": "img/galaxy/galaxyz-fold3-256gb.jpg"
+  },
+  {
+    "category": "huawei",
+    "name": "Mate20",
+    "price": 675,
+    "carbon": 78.9,
+    "img_dir": "img/huawei/mate20.jpg"
+  },
+  {
+    "category": "apple",
+    "name": "iPhone12-256GB",
+    "price": 899,
+    "carbon": 85,
+    "img_dir": "img/iphone/iphone12-256gb.jpg"
+  },
+  {
+    "category": "samsung",
+    "name": "GalaxyS22-256GB",
+    "price": 799.99,
+    "carbon": 0,
+    "img_dir": "img/galaxy/galaxys22-256gb.jpg"
+  },
+  {
+    "category": "huawei",
+    "name": "Mate20-X-256GB",
+    "price": 547,
+    "carbon": 82.8,
+    "img_dir": "img/huawei/mate20-x-256gb.jpg"
+  },
+  {
+    "category": "apple",
+    "name": "iPhone12-mini-64GB",
+    "price": 649,
+    "carbon": 64,
+    "img_dir": "img/iphone/iphone12-mini-64gb.jpg"
+  },
+  {
+    "category": "samsung",
+    "name": "GalaxyA32",
+    "price": 279.99,
+    "carbon": 0,
+    "img_dir": "img/galaxy/galaxya32.jpg"
+  },
+  {
+    "category": "huawei",
+    "name": "P40-Pro",
+    "price": 866,
+    "carbon": 82.5,
+    "img_dir": "img/huawei/p40-pro.jpg"
+  },
+  {
+    "category": "apple",
+    "name": "iPhone12-mini-128GB",
+    "price": 749,
+    "carbon": 69,
+    "img_dir": "img/iphone/iphone12-mini-128gb.jpg"
+  },
+  {
+    "category": "huawei",
+    "name": "P20-Pro",
+    "price": 499.99,
+    "carbon": 70.38,
+    "img_dir": "img/huawei/p20-pro.jpg"
+  },
+  {
+    "category": "apple",
+    "name": "iPhone12-mini-256GB",
+    "price": 799,
+    "carbon": 80,
+    "img_dir": "img/iphone/iphone12-mini-256gb.jpg"
+  },
+  {
+    "category": "samsung",
+    "name": "GalaxyS21-256GB",
+    "price": 849.99,
+    "carbon": 0,
+    "img_dir": "img/galaxy/galaxys21-256gb.jpg"
+  },
+  {
+    "category": "google",
+    "name": "Pixel6-128GB",
+    "price": 599,
+    "carbon": 0,
+    "img_dir": "img/pixel/pixel6-128gb.jpg"
+  },
+  {
+    "category": "huawei",
+    "name": "MateRS",
+    "price": 1476,
+    "carbon": 74.5,
+    "img_dir": "img/huawei/maters.jpg"
+  },
+  {
+    "category": "samsung",
+    "name": "GalaxyZ-flip3-128GB",
+    "price": 999.99,
+    "carbon": 0,
+    "img_dir": "img/galaxy/galaxyz-flip3-128gb.jpg"
+  },
+  {
+    "category": "huawei",
+    "name": "P40-Pro-Plus",
+    "price": 1307,
+    "carbon": 84.4,
+    "img_dir": "img/huawei/p40-pro-plus.jpg"
+  },
+  {
+    "category": "samsung",
+    "name": "GalaxyA12",
+    "price": 179.99,
+    "carbon": 0,
+    "img_dir": "img/galaxy/galaxya12.jpg"
+  },
+  {
+    "category": "huawei",
+    "name": "P30-Pro",
+    "price": 559.3,
+    "carbon": 80.6,
+    "img_dir": "img/huawei/p30-pro.jpg"
+  },
+  {
+    "category": "huawei",
+    "name": "P30-lite",
+    "price": 252.9,
+    "carbon": 62,
+    "img_dir": "img/huawei/p30-lite.jpg"
+  },
+  {
+    "category": "huawei",
+    "name": "P20",
+    "price": 447.3,
+    "carbon": 63.84,
+    "img_dir": "img/huawei/p20.jpg"
+  }
 ]
