@@ -91,6 +91,20 @@
     "img_dir": "img/iphone/iphone13-pro-128gb.jpg"
   },
   {
+    "category": "google",
+    "name": "Pixel6-128GB",
+    "price": 599,
+    "carbon": 83.6,
+    "img_dir": "img/iphone/pixel6-128gb.jpg"
+  },
+  {
+    "category": "google",
+    "name": "Pixel6-Pro-128GB",
+    "price": 899,
+    "carbon": 84.76,
+    "img_dir": "img/iphone/pixel6-pro-128gb.jpg"
+  },
+  {
     "category": "samsung",
     "name": "GalaxyZ-fold3-512GB",
     "price": 1899.99,
