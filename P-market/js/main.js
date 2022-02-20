@@ -8,27 +8,153 @@
 ---------------------------------------------------------  */
 
 'use strict';
-
+var mixer
 (function ($) {
 
     /*------------------
         Preloader
     --------------------*/
     $(window).on('load', function () {
+        /* fetch Item json*/
+
+        fetch('./item.json')
+        .then(function(response){
+            return response.json();})
+        .then(function(json){
+            let products = json;
+            //console.log(products);
+            loaditem(products)
+        })
+        .then(function(){
+            $('.set-bg').each(function () {
+            var bg = $(this).data('setbg');
+            $(this).css('background-image', 'url(' + bg + ')');
+            var containerEl = document.querySelector('.featured__filter');
+            mixer = mixitup(containerEl);
+            console.log(mixer)
+            // mixer.filter('.apple')
+    });
+        })
+        .catch(function(err){
+            console.log('Fetch problem:' + err.message);});
+
+
+    /*making products list*/
+    
+    function loaditem(products){
+        for(let i = 0; i < products.length ; i++){
+            let feature = document.createElement('div')
+            let image = document.createElement('div')
+            feature.setAttribute("class", "featured__item__text")
+//image----------------------------------------------------------
+            image.setAttribute("class", "featured__item__pic set-bg")
+            image.setAttribute("data-setbg", products[i].img_dir)
+            image.style.backgroundImage = products[i].img_dir
+            let inner = document.createElement('ul')
+            inner.setAttribute("class", "featured__item__pic__hover")
+
+            inner.innerHTML += ('<ul class="featured__item__pic__hover"> ')
+            inner.innerHTML += ('  <li><a href="#"><i class="fa fa-heart"></i></a></li>')
+            inner.innerHTML += ('  <li><a href="#"><i class="fa fa-retweet"></i></a></li>')
+            inner.innerHTML += ('  <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li></ul>')
+            image.append(inner)
+// feature------------------------------------------------------------
+            let name = document.createElement('h6')
+            name.append("'" + products[i].name + "'")
+            //console.log(name)
+            let price = document.createElement('h5')
+            price.setAttribute('class', 'price')
+            //price.setAttribute('price', price)
+            price.innerHTML = products[i].price.toFixed(2) + " $"
+
+            let carbon = document.createElement('h5')
+            carbon.setAttribute('class', 'carbon')
+            //carbon.setAttribute('data-carbon', products[i].carbon)
+            carbon.style.display = "none"
+            carbon.innerHTML = products[i].carbon.toFixed(2) +  'kg CO2eq'
+            feature.append(name, price, carbon)
+            //console.log(feature)
+
+            let post = document.createElement('div')
+            post.setAttribute("class", "col-lg-3 col-md-4 col-sm-6 mix " + products[i].category)
+            let container = document.createElement('div')
+            container.setAttribute("class", "featured__item")
+            //for sorting
+            post.setAttribute('data-carbon', products[i].carbon.toFixed(2))
+            post.setAttribute('data-price', products[i].price.toFixed(2))
+
+            container.append(image, feature)
+            post.append(container)
+            console.log(post)
+
+            document.getElementById("product_box").append(post)
+
+        }
+    }    
+
+
         $(".loader").fadeOut();
         $("#preloder").delay(200).fadeOut("slow");
 
         /*------------------
             Gallery filter
         --------------------*/
+//carbon_sort on click
+        $('.carbon_sort').on('click', function () {
+            // var mixer2 = mixitup(document.querySelector('.featured__filter'));
+            if(document.getElementsByClassName('filter_carbon')[0].classList.contains('active'))
+            {mixer.sort('price:asc')
+            .then(function(state) {
+                console.log(state.activeSort.attribute === 'carbon'); // true
+                console.log(state.activeSort.order === 'asc'); // true
+            });}
+
+            else{
+                mixer.sort('carbon:asc')
+                .then(function(state) {
+                console.log(state.activeSort.attribute === 'price'); // true
+                console.log(state.activeSort.order === 'asc'); // true
+                })
+            }
+        })
+
+//carbon_filter on click
+        $('.filter_carbon').on('click', function () {
+            var x = document.getElementsByClassName('carbon');
+            var y = document.getElementsByClassName('price');
+                      
+            if(document.getElementsByClassName('filter_carbon')[0].classList.contains('active')){
+                $('.filter_carbon').removeClass('active');
+                document.getElementsByClassName('featured spad')[0].style.background = '#F1FFF0'
+                for(var i = 0; i < x.length; i++){
+                    x[i].style.display = "";
+                    y[i].style.display = "none";
+                       
+                }
+            }
+            else {
+                $(this).addClass('active');
+                document.getElementsByClassName('featured spad')[0].style.background = ''
+                for(var i = 0; i < x.length; i++){
+                    x[i].style.display = "none";
+                    y[i].style.display = "";
+                    
+                }}
+        })
+
+
+    // filter control        
         $('.featured__controls li').on('click', function () {
             $('.featured__controls li').removeClass('active');
             $(this).addClass('active');
+            // mixer.filter('.apple')
         });
-        if ($('.featured__filter').length > 0) {
-            var containerEl = document.querySelector('.featured__filter');
-            var mixer = mixitup(containerEl);
-        }
+
+        // if ($('.featured__filter').length > 0) {
+        //     var containerEl = document.querySelector('.featured__filter');
+        //     var mixer = mixitup(containerEl);
+        //     mixer.filter('.google')
+        // }
     });
 
     /*------------------

@@ -1430,6 +1430,13 @@ ol {
 	font-size: 20px;
 	margin-top: 20px;
 	border-radius: 8px;
+	margin-right: 30px;
+}
+.just_sort{
+	background-color: #darkgray;
+	font-size: 20px;
+	margin-top: 20px;
+	border-radius: 8px;
 }
 .filter__sort {
 	margin-bottom: 15px;
