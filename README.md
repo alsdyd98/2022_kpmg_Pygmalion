@@ -5,6 +5,8 @@
 ## Overview
 We suggest you 
 
+![flowchart](https://user-images.githubusercontent.com/80660346/154845779-048dd65c-c158-4d07-b1c8-0c7463f0f54a.png)
+
 ## URL for API (During Competition)
 
 [JSON]
