@@ -10,7 +10,7 @@ First of all, features of product are extracted from the company website and the
 
 Converted JSON file is passed to our API Gateway which will return carbon emission prediction. It goes to our server which contains our AI module. AI module consists of certain models which we pre-trained through some known smartphone data. It responses the carbon emission prediction and API returns such value.
 
-To explain more about our AI module, it is mainly controlled by `phone-api.py` which handles API communication with models. `phone-api.py` first scales the given data with pre-trained scaler and then calls three AI-models: `production1.pkl`, `transport2.pkl`, `use3.pkl`. These are the models we have trained carbon emission of production, transport, use procedure respectively through some known data of Apple, Huawei, Google smartphones. The final prediction to return is the sum of three results from those models.
+To explain more about our AI module, it is mainly controlled by `phone-api.py` which handles API communication with models. `phone-api.py` first scales the given data with pre-trained scaler and then calls three AI-models: `production1.pkl`, `transport2.pkl`, `use3.pkl`. These are the models we have trained carbon emission of production, transport, use procedure respectively through some known data of Apple, Huawei, Google smartphones. Finally, it returns those three carbon emission predictions.
 
 ## URL for API (During Competition)
 
@@ -33,8 +33,14 @@ JSON file should be the form like below.
    ```
   
 [Single Query] 
+
 Example URL : http://20.194.102.116:5000/predict/single?product=GalaxyS22-256GB&display=425&battery=3700&mass=167&storage=256&release=2022&price=799.99
 
+Returns...
+  ```shell
+  {"predictions":"[{\"product\":\"GalaxyS22-256GB\",\"production\":71.8194846038,\"transport\":2.0652348078,\"use\":9.7403658281}]"}
+  ```
+  
 You can also put a single query after /predict/single to receive carbon emission prediction.
 The query should include information of product, display, battery, mass, storage, release, price for prediction.
 
