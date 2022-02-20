@@ -5,15 +5,32 @@
 ## Overview
 We suggest you 
 
-## URL for API
+## URL for API (During Competition)
 
 [JSON]
 http://20.194.102.116:5000/predict/data
+
+You can get the carbon emission prediction by giving JSON file of information of phones to /predict/data.
+JSON file should be the form like below.
+  ```shell
+  [{
+    "product":"GalaxyS22-256GB",
+    "display(ppi)":425.0,
+    "battery(mAh)":3700.0,
+    "mass(g)":167.0,
+    "storage(GB)":256.0,
+    "release(yr)":2022,
+    "price(USD)":799.99,
+    "brand":"Samsung"
+   }]
+   ```
   
 [Single Query] 
-(example)
-http://20.194.102.116:5000/predict/single?product=GalaxyS22-256GB&display=425&battery=3700&mass=167&storage=256&release=2022&price=799.99
-  
+Example URL : http://20.194.102.116:5000/predict/single?product=GalaxyS22-256GB&display=425&battery=3700&mass=167&storage=256&release=2022&price=799.99
+
+You can also put a single query after /predict/single to receive carbon emission prediction
+The query should include information of product, display, battery, mass, storage, release, price for prediction.
+
 ## Local Requirements
   ```shell
   $ pip install numpy
