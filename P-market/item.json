@@ -7,17 +7,10 @@
     "img_dir": "img/iphone/iphone13-128gb.jpg"
   },
   {
-    "category": "google",
-    "name": "Pixel6-Pro-128GB",
-    "price": 899,
-    "carbon": 0,
-    "img_dir": "img/pixel/pixel6-pro-128gb.jpg"
-  },
-  {
     "category": "samsung",
     "name": "GalaxyS22-Ultra-256GB",
     "price": 1199.99,
-    "carbon": 0,
+    "carbon": 92.88,
     "img_dir": "img/galaxy/galaxys22-ultra-256gb.jpg"
   },
   {
@@ -38,7 +31,7 @@
     "category": "samsung",
     "name": "GalaxyS21-Plus-128GB",
     "price": 999.99,
-    "carbon": 0,
+    "carbon": 89.05,
     "img_dir": "img/galaxy/galaxys21-plus-128gb.jpg"
   },
   {
@@ -73,7 +66,7 @@
     "category": "samsung",
     "name": "GalaxyS22-Ultra-1TB",
     "price": 1599.99,
-    "carbon": 0,
+    "carbon": 113.41,
     "img_dir": "img/galaxy/galaxys22-ultra-1tb.jpg"
   },
   {
@@ -101,7 +94,7 @@
     "category": "samsung",
     "name": "GalaxyZ-fold3-512GB",
     "price": 1899.99,
-    "carbon": 0,
+    "carbon": 104.44,
     "img_dir": "img/galaxy/galaxyz-fold3-512gb.jpg"
   },
   {
@@ -136,7 +129,7 @@
     "category": "samsung",
     "name": "GalaxyS21-128GB",
     "price": 799.99,
-    "carbon": 0,
+    "carbon": 81.34,
     "img_dir": "img/galaxy/galaxys21-128gb.jpg"
   },
   {
@@ -178,7 +171,7 @@
     "category": "samsung",
     "name": "GalaxyS22-Ultra-512GB",
     "price": 1299.99,
-    "carbon": 0,
+    "carbon": 99.14,
     "img_dir": "img/galaxy/galaxys22-ultra-512gb.jpg"
   },
   {
@@ -206,7 +199,7 @@
     "category": "samsung",
     "name": "GalaxyZ-flip3-256GB",
     "price": 1049.99,
-    "carbon": 0,
+    "carbon": 83.26,
     "img_dir": "img/galaxy/galaxyz-flip3-256gb.jpg"
   },
   {
@@ -227,7 +220,7 @@
     "category": "samsung",
     "name": "GalaxyS22-Plus-256GB",
     "price": 999.99,
-    "carbon": 0,
+    "carbon": 91.28,
     "img_dir": "img/galaxy/galaxys22-plus-256gb.jpg"
   },
   {
@@ -276,7 +269,7 @@
     "category": "samsung",
     "name": "GalaxyZ-fold3-256GB",
     "price": 1799.99,
-    "carbon": 0,
+    "carbon": 98.09,
     "img_dir": "img/galaxy/galaxyz-fold3-256gb.jpg"
   },
   {
@@ -297,7 +290,7 @@
     "category": "samsung",
     "name": "GalaxyS22-256GB",
     "price": 799.99,
-    "carbon": 0,
+    "carbon": 83.62,
     "img_dir": "img/galaxy/galaxys22-256gb.jpg"
   },
   {
@@ -318,7 +311,7 @@
     "category": "samsung",
     "name": "GalaxyA32",
     "price": 279.99,
-    "carbon": 0,
+    "carbon": 76.58,
     "img_dir": "img/galaxy/galaxya32.jpg"
   },
   {
@@ -350,20 +343,6 @@
     "img_dir": "img/iphone/iphone12-mini-256gb.jpg"
   },
   {
-    "category": "samsung",
-    "name": "GalaxyS21-256GB",
-    "price": 849.99,
-    "carbon": 0,
-    "img_dir": "img/galaxy/galaxys21-256gb.jpg"
-  },
-  {
-    "category": "google",
-    "name": "Pixel6-128GB",
-    "price": 599,
-    "carbon": 0,
-    "img_dir": "img/pixel/pixel6-128gb.jpg"
-  },
-  {
     "category": "huawei",
     "name": "MateRS",
     "price": 1476,
@@ -374,7 +353,7 @@
     "category": "samsung",
     "name": "GalaxyZ-flip3-128GB",
     "price": 999.99,
-    "carbon": 0,
+    "carbon": 82.44,
     "img_dir": "img/galaxy/galaxyz-flip3-128gb.jpg"
   },
   {
@@ -388,7 +367,7 @@
     "category": "samsung",
     "name": "GalaxyA12",
     "price": 179.99,
-    "carbon": 0,
+    "carbon": 76.13,
     "img_dir": "img/galaxy/galaxya12.jpg"
   },
   {
