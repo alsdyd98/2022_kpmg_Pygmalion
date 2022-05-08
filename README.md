@@ -2,7 +2,8 @@
 
 [2022 KPMG Ideathon Challenge] Pygmalion
 
-** Got 3rd price in this competition
+**Won 3rd place**
+
 ## Overview
 
 ![image](https://user-images.githubusercontent.com/80660346/154846724-b391d8fb-a289-4117-8c48-8be83b2b007f.png)
